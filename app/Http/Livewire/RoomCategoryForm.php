@@ -55,7 +55,6 @@ class RoomCategoryForm extends Component
         $this->resetInputFields();
         $this->emit('refreshParent');
         $this->emit('closeRoomCategoryModal');
-
     }
 
     

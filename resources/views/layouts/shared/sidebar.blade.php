@@ -26,17 +26,17 @@
         <h3>BOHOL COOP TOURIST INN-</h3>
         <ul class="nav side-menu">
           <li><a><i class="fa fa-home"></i> Dashboard </a></li>
-          <li><a href=""><i class="fa fa-info"></i> Billing </a></li>
-          <li><a href="{{route('client')}}"><i class="fa fa-info"></i> Customer Information File </a></li>
-          <li><a><i class="fa fa-money"></i> Check-In Management<span class="fa fa-chevron-down"></span></a>
+          <li><a href=""><i class="fa fa-money"></i> Billing </a></li>
+          <li><a href="{{route('client')}}"><i class="fa fa-user-plus"></i> Customer Information File </a></li>
+          <li><a><i class="fa fa-bed"></i></i> Check-In Management<span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
               <li><a href="form.html">Reservation</a></li>
               <li><a href="">Walk-In</a></li>
             </ul>
           </li>
-          <li><a href=""><i class="fa fa-info"></i> Restaurants </a></li>
-          <li><a href=""><i class="fa fa-info"></i> Events </a></li>
-          <li><a href=""><i class="fa fa-info"></i> Parking </a></li>
+          <li><a href=""><i class="fa fa-cutlery" aria-hidden="true"></i></i> Restaurants </a></li>
+          <li><a href=""><i class="fa fa-calendar-plus-o"></i></i> Events </a></li>
+          <li><a href=""><i class="fa fa-car"></i></i> Parking </a></li>
           <li><a><i class="fa fa-user-times"></i> Users Management<span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
               <li><a href="">New User</a></li>
