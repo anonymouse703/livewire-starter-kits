@@ -37,11 +37,11 @@
                                                                 @forelse ($rooms as $room)
                                                                     <tr>
                                                                         <td>
-                                                                            @if (!empty($room->images->image_name))
-                                                                                <img width="100px" src="{{url('storage/images/'.$room->images->image_name)}}">
-                                                                            @else
+                                                                            @forelse($room->images as $img)
+                                                                                <img style="width:180px; height:200px" src="{{url('storage/images/'.$img->image_name)}}">
+                                                                                @empty
                                                                                 No Room Category Image Available
-                                                                            @endif
+                                                                            @endforelse
                                                                         </td>
                                                                         <td>{{$room->name}}</td>
                                                                         <td>{{$room->base_price}}</td>
