@@ -43,6 +43,6 @@
                     {{ __('Log in') }}
                 </x-jet-button>
             </div>
-        </form>
+        </form> 
     </x-jet-authentication-card>
 </x-guest-layout>
