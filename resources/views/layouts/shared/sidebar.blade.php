@@ -25,7 +25,8 @@
       <div class="menu_section">
         <h3>BOHOL COOP TOURIST INN-</h3>
         <ul class="nav side-menu">
-          <li><a><i class="fa fa-home"></i> Dashboard </a></li>
+          <li><a  href="{{route('dashboard')}}"><i class="fa fa-home"></i> Dashboard </a></li>
+          <li><a  href="{{route('sample')}}"><i class="fa fa-settings"></i> Sample Component </a></li>
           <li><a href=""><i class="fa fa-money"></i> Billing </a></li>
           <li><a href="{{route('client')}}"><i class="fa fa-user-plus"></i> Customer Information File </a></li>
           <li><a><i class="fa fa-bed"></i></i> Check-In Management<span class="fa fa-chevron-down"></span></a>
