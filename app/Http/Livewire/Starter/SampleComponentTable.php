@@ -52,6 +52,6 @@ class SampleComponentTable extends Component
     public function deleteSample($sampleId){
         
         Sample::destroy($sampleId);
-        $this->resetPage();
+        $this->reset();
     }
 }
