@@ -9,6 +9,19 @@ $(document).ready(function() {
     });
 } );
 
+document.addEventListener("DOMContentLoaded", () => {
+
+    Livewire.hook('element.updated', (el, component) => {
+        $("#clientTable").DataTable().destroy();
+        $('#clientTable').DataTable({
+            responsive: true,
+            paging : true,
+            destroy : true, 
+            scrollY: 300,
+        });
+    })
+});
+
 window.livewire.on('closeClientModal', () => {
     $('#clientModal').modal('hide');
 });

@@ -3,7 +3,7 @@
         <form wire:submit.prevent="store" enctype="multipart/form-data">
             <!-- Modal Header -->
             <div class="modal-header">
-            <h4 class="modal-title">Sample Name</h4>
+            <h4 class="modal-title">Sample Information</h4>
             <a type="button" class="close" data-dismiss="modal">&times;</a>
             </div>
             

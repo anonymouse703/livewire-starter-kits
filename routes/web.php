@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\ClientTable;
 use App\Http\Livewire\RoomCategoryTable;
 use App\Http\Livewire\Starter\SampleComponentTable;
+use App\Http\Livewire\Users\UserTable;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,5 +37,5 @@ Route::group(['middleware' => [
     Route::get('/client', ClientTable::class)->name('client');
     Route::get('/room-category', RoomCategoryTable::class)->name('room-category');
     Route::get('/sample', SampleComponentTable::class)->name('sample');
-
+    Route::get('/user', UserTable::class)->name('user');
 });

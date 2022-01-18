@@ -24,6 +24,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Schema::defaultStringLength(191);
+        // Schema::defaultStringLength(191); //to solve laravel specified key error
+        Schema::defaultStringLength(125); //To solve spatie specified key error
     }
 }

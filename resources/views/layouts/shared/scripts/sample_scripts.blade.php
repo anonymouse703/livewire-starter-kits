@@ -9,6 +9,25 @@ $(document).ready(function() {
     });
 } );
 
+document.addEventListener("DOMContentLoaded", () => {
+
+    Livewire.hook('element.updated', (el, component) => {
+        $("#sampleTable").DataTable().destroy();
+        $('#sampleTable').DataTable({
+            responsive: true,
+            paging : true,
+            destroy : true, 
+            scrollY: 300,
+        });
+    });
+
+    Livewire.hook('message.processed', (component) => {
+        setTimeout(function() {
+            $('#alert').fadeOut('fast');
+        }, 10000);
+    });
+});
+
 window.livewire.on('closeSampleModal', () => {
     $('#sampleModal').modal('hide');
 });
