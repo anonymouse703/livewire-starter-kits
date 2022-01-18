@@ -107,7 +107,7 @@ class UserForm extends Component
 
         $this->resetInputFields();
         $this->emit('refreshParent');
-        $this->emit('closeUserModal');
+        $this->emit('closeModal');
     }
 
 }

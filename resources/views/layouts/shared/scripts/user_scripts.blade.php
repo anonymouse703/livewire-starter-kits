@@ -26,7 +26,7 @@
     });
 
 
-    window.livewire.on('closeUserModal', () => {
+    window.livewire.on('closeModal', () => {
         $('#userModal').modal('hide');
         $('#userTable').DataTable();
     });
